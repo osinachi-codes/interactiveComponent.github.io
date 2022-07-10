@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="card-box flex flex-js-c flex-ai-c">
+    <div class="card">
+      <div class="card__content--1">
+        <div class="card__star-box flex flex-js-c flex-ai-c">
+          <img src="images/icon-star.svg" alt="star" class="card__star">
+        </div>
+  
+        <h1 class="card__heading">
+          How did we do?
+        </h1>
+  
+        <div class="card__text">
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </div>
+  
+        <div class="card__rating-wrapper flex flex-ai-c flex-js-s">
+          <div class="card__rating-btn"><div>1</div></div>
+          <div class="card__rating-btn"><div>2</div></div>
+          <div class="card__rating-btn"><div>3</div></div>
+          <div class="card__rating-btn card__active"><div>4</div></div>
+          <div class="card__rating-btn"><div>5</div></div>
+        </div>
+  
+        <div class="card__submit-btn"><div>Submit</div></div>
+  
+      </div>
+
+      <div class="card__content--2 hide">
+        <div class="card__illustration-box">
+          <img src="images/illustration-thank-you.svg" alt="Thank You" class="card__illustration">
+        </div>
+
+        <div class="card__result">
+          <div>You selected <span class="score">4</span> out of <span>5</span></div>
+        </div>
+        <h2 class="card__heading">Thank you!</h2>
+        <div class="card__text center">
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+
+  <!-- Rating state start -->
+
+  <!-- 
+
+  
+
+  1 2 3 4 5
+
+  -->
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <!-- 
+
+  Thank you!
+
+  -->
+
+  <!-- Thank you state end -->
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
